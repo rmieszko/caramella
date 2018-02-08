@@ -19,7 +19,7 @@ li {
 
 a {
 
-    text-decoration: none;
+    color: #fff !important;
     transition: all 500ms ease-in-out;
 }
 
@@ -33,7 +33,6 @@ h1,
 h2,
 h4 {
     font-family: 'PT Sans Narrow', Arial, sans-serif;
-    text-transform: uppercase;
     font-weight: 700;
 	
 	
@@ -49,12 +48,13 @@ p {
     transition: all 300ms ease-in-out;
     font-weight: 500 !important;
     text-transform: uppercase;
+	
 }
 
 .btn:hover {
 
-    background-color: #ededed !important;
-    color: #3c3c3c !important;
+    background-color: #606060 !important;
+    color: #fff !important;
     border: 1px solid #fff !important;
 }
 
@@ -218,10 +218,14 @@ p {
     background-color: #E83C47;
 }
 
-.oferta h2,
+#white {
+	color: #fff;
+}
+
+
 .oferta p {
     
-    color: #fff;
+    color: #4f4f4f;
 }
 
 .oferta p {
@@ -229,48 +233,11 @@ p {
     padding-bottom: 40px;
 }
 
-.oferta .packages {
-    
-    padding: 30px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 5px;
-    margin-top: 30px;
 
-}
-
-.oferta img{
-
-border-radius: 5px;
-max-width: 120px;
-}
-
-
-.packages li {
-    
+p span 
+{
     display: block;
-    padding: 5px;
 }
-
-.packages h4,
-.packages h1,
-.packages b {
-    
-    color: #4c4c4c;
-}
-
-.packages p,
-.packages li {
-    
-    color: #737373;
-}
-
-.packages button {
-    
-    margin-top: 10px;
-}
-
-
 
 @media(max-width:768px) {
     
@@ -287,7 +254,53 @@ max-width: 120px;
 }
 
 
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #428bca;
+}
 
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
 
 
 /*KONTAKT*/
@@ -368,7 +381,7 @@ max-width: 120px;
 .footer input {
     
     height: 40px;
-    width: 160px;
+    width: 170px;
     padding: 5px;
     border: none;
     background-color: #fff;
